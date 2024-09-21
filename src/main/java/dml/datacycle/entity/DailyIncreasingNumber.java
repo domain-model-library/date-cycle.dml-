@@ -14,9 +14,8 @@ public class DailyIncreasingNumber {
         long currentTimeDay = currentTime / 86400000;
         if (currentTimeDay > lastUpdateTimeDay) {
             number = 0;
-        } else {
-            number++;
         }
+        number++;
         lastUpdateTime = currentTime;
     }
 
